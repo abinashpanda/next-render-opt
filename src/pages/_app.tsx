@@ -1,9 +1,5 @@
 import 'tailwindcss/tailwind.css'
-import dynamic from 'next/dynamic'
-
-const AppShell = dynamic(() => import('components/app-shell'), {
-  ssr: false,
-})
+import AppShell from 'components/app-shell'
 
 function MyApp({ Component, pageProps }) {
   return (
